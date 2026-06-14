@@ -1,0 +1,70 @@
+import { AttendanceRecord, AttendanceSummary, AttendanceDay } from '@/types';
+
+export const attendanceRecords: AttendanceRecord[] = [
+  { id: 'att-1', employeeId: '1', employeeName: 'Rajesh Kumar', date: '2024-06-12', clockIn: '09:05 AM', clockOut: '06:30 PM', status: 'present', hoursWorked: 9.4, overtime: 0.4 },
+  { id: 'att-2', employeeId: '2', employeeName: 'Priya Sharma', date: '2024-06-12', clockIn: '08:45 AM', clockOut: '07:00 PM', status: 'present', hoursWorked: 10.25, overtime: 1.25 },
+  { id: 'att-3', employeeId: '3', employeeName: 'Amit Patel', date: '2024-06-12', clockIn: '09:30 AM', clockOut: '06:00 PM', status: 'present', hoursWorked: 8.5, overtime: 0 },
+  { id: 'att-4', employeeId: '4', employeeName: 'Sneha Gupta', date: '2024-06-12', clockIn: '10:15 AM', clockOut: '06:45 PM', status: 'late', hoursWorked: 8.5, overtime: 0 },
+  { id: 'att-5', employeeId: '5', employeeName: 'Vikram Singh', date: '2024-06-12', clockIn: '09:00 AM', clockOut: '01:00 PM', status: 'half-day', hoursWorked: 4, overtime: 0 },
+  { id: 'att-6', employeeId: '6', employeeName: 'Ananya Reddy', date: '2024-06-12', clockIn: '08:55 AM', clockOut: '06:15 PM', status: 'present', hoursWorked: 9.3, overtime: 0.3 },
+  { id: 'att-7', employeeId: '7', employeeName: 'Arjun Nair', date: '2024-06-12', clockIn: '-', clockOut: '-', status: 'absent', hoursWorked: 0, overtime: 0 },
+  { id: 'att-8', employeeId: '8', employeeName: 'Meera Joshi', date: '2024-06-12', clockIn: '09:10 AM', clockOut: '06:20 PM', status: 'present', hoursWorked: 9.2, overtime: 0.2 },
+  { id: 'att-9', employeeId: '9', employeeName: 'Kavita Deshmukh', date: '2024-06-12', clockIn: '08:30 AM', clockOut: '05:45 PM', status: 'present', hoursWorked: 9.25, overtime: 0.25 },
+  { id: 'att-10', employeeId: '10', employeeName: 'Rohan Mehta', date: '2024-06-12', clockIn: '09:20 AM', clockOut: '06:30 PM', status: 'present', hoursWorked: 9.2, overtime: 0.2 },
+  { id: 'att-11', employeeId: '11', employeeName: 'Deepa Iyer', date: '2024-06-12', clockIn: '09:00 AM', clockOut: '06:00 PM', status: 'present', hoursWorked: 9, overtime: 0 },
+  { id: 'att-12', employeeId: '12', employeeName: 'Sanjay Verma', date: '2024-06-12', clockIn: '08:45 AM', clockOut: '07:30 PM', status: 'present', hoursWorked: 10.75, overtime: 1.75 },
+  { id: 'att-13', employeeId: '14', employeeName: 'Karthik Rajan', date: '2024-06-12', clockIn: '09:15 AM', clockOut: '06:45 PM', status: 'present', hoursWorked: 9.5, overtime: 0.5 },
+  { id: 'att-14', employeeId: '15', employeeName: 'Pooja Agarwal', date: '2024-06-12', clockIn: '09:00 AM', clockOut: '06:00 PM', status: 'present', hoursWorked: 9, overtime: 0 },
+  { id: 'att-15', employeeId: '16', employeeName: 'Suresh Babu', date: '2024-06-12', clockIn: '-', clockOut: '-', status: 'absent', hoursWorked: 0, overtime: 0 },
+];
+
+export const attendanceSummary: AttendanceSummary = {
+  totalDays: 22,
+  present: 19,
+  absent: 1,
+  halfDay: 1,
+  late: 1,
+  holidays: 0,
+  percentage: 90.9,
+};
+
+export const monthlyAttendance: AttendanceDay[] = [
+  { date: '2024-06-01', status: 'weekend' },
+  { date: '2024-06-02', status: 'weekend' },
+  { date: '2024-06-03', status: 'present' },
+  { date: '2024-06-04', status: 'present' },
+  { date: '2024-06-05', status: 'present' },
+  { date: '2024-06-06', status: 'late' },
+  { date: '2024-06-07', status: 'present' },
+  { date: '2024-06-08', status: 'weekend' },
+  { date: '2024-06-09', status: 'weekend' },
+  { date: '2024-06-10', status: 'present' },
+  { date: '2024-06-11', status: 'present' },
+  { date: '2024-06-12', status: 'present' },
+  { date: '2024-06-13', status: 'half-day' },
+  { date: '2024-06-14', status: 'present' },
+  { date: '2024-06-15', status: 'weekend' },
+  { date: '2024-06-16', status: 'weekend' },
+  { date: '2024-06-17', status: 'absent' },
+  { date: '2024-06-18', status: 'present' },
+  { date: '2024-06-19', status: 'present' },
+  { date: '2024-06-20', status: 'present' },
+  { date: '2024-06-21', status: 'present' },
+  { date: '2024-06-22', status: 'weekend' },
+  { date: '2024-06-23', status: 'weekend' },
+  { date: '2024-06-24', status: 'present' },
+  { date: '2024-06-25', status: 'present' },
+  { date: '2024-06-26', status: 'present' },
+  { date: '2024-06-27', status: 'present' },
+  { date: '2024-06-28', status: 'holiday' },
+  { date: '2024-06-29', status: 'weekend' },
+  { date: '2024-06-30', status: 'weekend' },
+];
+
+export const weeklyAttendanceStats = [
+  { name: 'Mon', present: 138, absent: 4, late: 6, halfDay: 2 },
+  { name: 'Tue', present: 140, absent: 3, late: 5, halfDay: 2 },
+  { name: 'Wed', present: 142, absent: 2, late: 4, halfDay: 2 },
+  { name: 'Thu', present: 136, absent: 6, late: 8, halfDay: 0 },
+  { name: 'Fri', present: 130, absent: 10, late: 6, halfDay: 4 },
+];
