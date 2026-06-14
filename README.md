@@ -128,7 +128,7 @@ This application follows a premium **Neumorphic (Soft UI)** design language feat
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/hrms-pro.git
+git clone https://github.com/ShreyasAher/hrms-pro.git
 
 cd hrms-pro
 
